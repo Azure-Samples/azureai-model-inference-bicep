@@ -27,9 +27,10 @@ This project framework provides the following features:
     ```bash
     az login
     ```
+
 - The `jq` tool.
 
-  ``bash
+  ```bash
   sudo apt install jq
   ```
 
@@ -48,12 +49,10 @@ Inspect the file `models.json` and configure the models you are interested on de
 {
     "provider": "Microsoft",
     "name": "Phi-3.5-vision-instruct",
-    "version": "2"
+    "version": "2",
+    "sku": "GlobalStandard"
 }
 ```
-
-> [!TIP]
-> You can generate the file `models.json` by running: `. get-model.sh`
 
 Ensure you are in the right subscription:
 
