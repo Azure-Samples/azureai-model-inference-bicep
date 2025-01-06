@@ -1,57 +1,95 @@
-# Project Name
+# Deploy and configure model inference in Azure AI Foundry
 
-(short, 1-3 sentenced, description of the project)
+This repository shows how you can use Bicep to deploy flagship models in Azure AI Foundry.
 
 ## Features
 
 This project framework provides the following features:
 
-* Feature 1
-* Feature 2
-* ...
+* Deploy multiple models from the Azure AI catalog into the Azure AI model inference service in Azure AI Services.
+* Deploy multiple models in Azure AI Services and provision/configure a project to run inference from the Azure AI model inference service in Azure AI Services.
+* Configure Content filters for the model deployments.
 
 ## Getting Started
 
 ### Prerequisites
 
-(ideally very short, if any)
+- Download and install it from the [Azure CLI installation page](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+- Verify the installation:
 
-- OS
-- Library version
-- ...
+  ```bash
+  az --version
+  ```
 
-### Installation
+- An Azure subscription.
+- Sign in to your Azure account to deploy resources.
 
-(ideally very short)
+    ```bash
+    az login
+    ```
+- The `jq` tool.
 
-- npm install [package name]
-- mvn install
-- ...
+  ``bash
+  sudo apt install jq
+  ```
 
 ### Quickstart
-(Add steps to get up and running quickly)
 
-1. git clone [repository clone url]
-2. cd [repository name]
-3. ...
+Clone the project:
+
+```bash
+git clone https://github.com/Azure-Samples/azureai-model-inference-bicep`
+cd azureai-model-inference-bicep/infra
+```
+
+Inspect the file `models.json` and configure the models you are interested on deploying. The file is an array of JSON objects with the properties `provider`, `name`, and version. By default, this repository contains all the model definitions available for pay-as-you-go:
+
+```JSON
+{
+    "provider": "Microsoft",
+    "name": "Phi-3.5-vision-instruct",
+    "version": "2"
+}
+```
+
+> [!TIP]
+> You can generate the file `models.json` by running: `. get-model.sh`
+
+Ensure you are in the right subscription:
+
+```bash
+az account set --subscription "<subscription-id>"
+```
+
+Configure the deployment
+
+```bash
+RESOURCE_GROUP="azureai-models-dev"
+LOCATION="eastus2"
+```
+
+#### Deploy all the models in Azure AI Services
+
+Run the deployment:
+
+```bash
+az deployment group create \
+  --resource-group $RESOURCE_GROUP \
+  --template-file deploy.bicep
+```
 
 
-## Demo
+#### Deploy all the models and configure an AI project/hub
 
-A demo app is included to show how to use the project.
+Run the deployment:
 
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
+```bash
+az deployment group create \
+  --resource-group $RESOURCE_GROUP \
+  --template-file deploy-with-project.bicep
+```
 
 ## Resources
 
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+- [Azure AI model inference](https://aka.ms/aiservices/inference)
+- [Azure Machine Learning resource management reference](https://learn.microsoft.com/azure/templates/microsoft.machinelearningservices/workspaces)
