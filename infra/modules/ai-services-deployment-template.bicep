@@ -11,6 +11,7 @@ param modelVersion string
   'AI21 Labs'
   'Cohere'
   'Core42'
+  'DeepSeek'
   'Meta'
   'Microsoft'
   'Mistral AI'
