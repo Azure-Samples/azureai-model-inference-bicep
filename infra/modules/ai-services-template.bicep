@@ -26,6 +26,7 @@ param networkAclsDefaultAction string = 'Allow'
 
 resource account 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   name: accountName
+  customSubDomainName: accountName
   location: location
   identity: {
     type: 'SystemAssigned'
@@ -43,5 +44,5 @@ resource account 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   }
 }
 
-output endpointUri string = account.properties.endpoints['Azure AI Model Inference API']
+output endpointUri string = 'https://${account.outputs.name}.services.ai.azure.com/models'
 output id string = account.id
