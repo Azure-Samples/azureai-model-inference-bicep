@@ -26,7 +26,6 @@ param networkAclsDefaultAction string = 'Allow'
 
 resource account 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   name: accountName
-  customSubDomainName: accountName
   location: location
   identity: {
     type: 'SystemAssigned'
@@ -36,6 +35,7 @@ resource account 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   }
   kind: 'AIServices'
   properties: {
+    customSubDomainName: accountName
     publicNetworkAccess: publicNetworkAccess
     networkAcls: {
       defaultAction: networkAclsDefaultAction
