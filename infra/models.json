@@ -60,6 +60,12 @@
     "sku": "GlobalStandard"
   },
   {
+    "name": "DeepSeek-V3",
+    "version": "1",
+    "provider": "DeepSeek",
+    "sku": "GlobalStandard"
+  },
+  {
     "name": "jais-30b-chat",
     "version": "1",
     "provider": "Core42",
