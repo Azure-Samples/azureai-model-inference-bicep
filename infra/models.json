@@ -18,19 +18,7 @@
     "sku": "GlobalStandard"
   },
   {
-    "name": "Cohere-command-r",
-    "version": "1",
-    "provider": "Cohere",
-    "sku": "GlobalStandard"
-  },
-  {
     "name": "Cohere-command-r-08-2024",
-    "version": "1",
-    "provider": "Cohere",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Cohere-command-r-plus",
     "version": "1",
     "provider": "Cohere",
     "sku": "GlobalStandard"
@@ -60,7 +48,7 @@
     "sku": "GlobalStandard"
   },
   {
-    "name": "DeepSeek-V3",
+    "name": "DeepSeek-V3-0324",
     "version": "1",
     "provider": "DeepSeek",
     "sku": "GlobalStandard"
@@ -187,18 +175,6 @@
   },
   {
     "name": "Mistral-Nemo",
-    "version": "1",
-    "provider": "Mistral AI",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Mistral-large",
-    "version": "1",
-    "provider": "Mistral AI",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Mistral-large-2407",
     "version": "1",
     "provider": "Mistral AI",
     "sku": "GlobalStandard"
