@@ -12,9 +12,9 @@
     "sku": "GlobalStandard"
   },
   {
-    "name": "AI21-Jamba-Instruct",
+    "name": "Cohere-command-a",
     "version": "1",
-    "provider": "AI21 Labs",
+    "provider": "Cohere",
     "sku": "GlobalStandard"
   },
   {
@@ -30,13 +30,7 @@
     "sku": "GlobalStandard"
   },
   {
-    "name": "Cohere-embed-v3-english",
-    "version": "1",
-    "provider": "Cohere",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Cohere-embed-v3-multilingual",
+    "name": "embed-v-4-0",
     "version": "1",
     "provider": "Cohere",
     "sku": "GlobalStandard"
@@ -162,7 +156,37 @@
     "sku": "GlobalStandard"
   },
   {
+    "name": "Phi-4",
+    "version": "7",
+    "provider": "Microsoft",
+    "sku": "GlobalStandard"
+  },
+  {
+    "name": "Phi-4-multimodal-instruct",
+    "version": "1",
+    "provider": "Microsoft",
+    "sku": "GlobalStandard"
+  },
+  {
+    "name": "Phi-4-mini-instruct",
+    "version": "1",
+    "provider": "Microsoft",
+    "sku": "GlobalStandard"
+  },
+  {
+    "name": "MAI-DS-R1",
+    "version": "1",
+    "provider": "Microsoft",
+    "sku": "GlobalStandard"
+  },
+  {
     "name": "Ministral-3B",
+    "version": "1",
+    "provider": "Mistral AI",
+    "sku": "GlobalStandard"
+  },
+  {
+    "name": "Codestral-2501",
     "version": "1",
     "provider": "Mistral AI",
     "sku": "GlobalStandard"
@@ -180,7 +204,7 @@
     "sku": "GlobalStandard"
   },
   {
-    "name": "Mistral-small",
+    "name": "Mistral-small-2503",
     "version": "1",
     "provider": "Mistral AI",
     "sku": "GlobalStandard"
@@ -202,5 +226,35 @@
     "version": "2024-07-18",
     "provider": "OpenAI",
     "sku": "GlobalStandard"
+  },
+  {
+    "name": "o3",
+    "version": "2025-04-16",
+    "provider": "OpenAI",
+    "sku": "GlobalStandard"
+  },
+  {
+      "name": "o4-mini",
+      "version": "2025-04-16",
+      "provider": "OpenAI",
+      "sku": "GlobalStandard"
+  },
+  {
+      "name": "gpt-4.1",
+      "version": "2025-04-14",
+      "provider": "OpenAI",
+      "sku": "GlobalStandard"
+  },
+  {
+      "name": "gpt-4.1-mini",
+      "version": "2025-04-14",
+      "provider": "OpenAI",
+      "sku": "GlobalStandard"
+  },
+  {
+      "name": "gpt-4.1-nano",
+      "version": "2025-04-14",
+      "provider": "OpenAI",
+      "sku": "GlobalStandard"
   }
 ]
