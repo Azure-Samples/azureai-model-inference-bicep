@@ -1,4 +1,4 @@
-# Deploy and configure model inference in Azure AI Foundry
+# Deploy and configure Azure AI Foundry Models
 
 This repository shows how you can use Bicep to deploy flagship models in Azure AI Foundry.
 
@@ -6,8 +6,8 @@ This repository shows how you can use Bicep to deploy flagship models in Azure A
 
 This project framework provides the following features:
 
-* Deploy multiple models from the Azure AI catalog into the Azure AI model inference service in Azure AI Services.
-* Deploy multiple models in Azure AI Services and provision/configure a project to run inference from the Azure AI model inference service in Azure AI Services.
+* Deploy multiple models from the Azure AI catalog into standard global deployments in Azure AI Foundry Models.
+* Deploy multiple models in Azure AI Foundry resources and provision/configure a project to run inference from Azure AI Foundry Models.
 * Configure Content filters for the model deployments.
 
 ## Getting Started
@@ -67,7 +67,7 @@ RESOURCE_GROUP="azureai-models-dev"
 LOCATION="eastus2"
 ```
 
-#### Deploy all the models in Azure AI Services
+#### Deploy all the models in Azure AI Foundry Models supporting standard global deployments
 
 Run the deployment:
 
@@ -90,5 +90,5 @@ az deployment group create \
 
 ## Resources
 
-- [Azure AI model inference](https://aka.ms/aiservices/inference)
+- [Azure AI Foundry Models](https://aka.ms/aiservices/inference)
 - [Azure Machine Learning resource management reference](https://learn.microsoft.com/azure/templates/microsoft.machinelearningservices/workspaces)
