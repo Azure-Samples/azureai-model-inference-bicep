@@ -12,6 +12,7 @@ param modelVersion string
   'Cohere'
   'Core42'
   'DeepSeek'
+  'xAI'
   'Meta'
   'Microsoft'
   'Mistral AI'
@@ -22,6 +23,7 @@ param modelPublisherFormat string
 
 @allowed([
     'GlobalStandard'
+    'DataZoneStandard'
     'Standard'
     'GlobalProvisioned'
     'Provisioned'
