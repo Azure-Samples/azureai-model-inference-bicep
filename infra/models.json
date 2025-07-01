@@ -1,17 +1,5 @@
 [
   {
-    "name": "AI21-Jamba-1.5-Large",
-    "version": "1",
-    "provider": "AI21 Labs",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "AI21-Jamba-1.5-Mini",
-    "version": "1",
-    "provider": "AI21 Labs",
-    "sku": "GlobalStandard"
-  },
-  {
     "name": "Cohere-command-a",
     "version": "1",
     "provider": "Cohere",
@@ -36,7 +24,7 @@
     "sku": "GlobalStandard"
   },
   {
-    "name": "DeepSeek-R1",
+    "name": "DeepSeek-R1-0528",
     "version": "1",
     "provider": "DeepSeek",
     "sku": "GlobalStandard"
@@ -45,6 +33,18 @@
     "name": "DeepSeek-V3-0324",
     "version": "1",
     "provider": "DeepSeek",
+    "sku": "GlobalStandard"
+  },
+  {
+    "name": "grok-3",
+    "version": "1",
+    "provider": "xAI",
+    "sku": "GlobalStandard"
+  },
+  {
+    "name": "grok-3-mini",
+    "version": "1",
+    "provider": "xAI",
     "sku": "GlobalStandard"
   },
   {
@@ -99,42 +99,6 @@
     "name": "Meta-Llama-3.1-8B-Instruct",
     "version": "4",
     "provider": "Meta",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Phi-3-medium-128k-instruct",
-    "version": "6",
-    "provider": "Microsoft",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Phi-3-medium-4k-instruct",
-    "version": "5",
-    "provider": "Microsoft",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Phi-3-mini-128k-instruct",
-    "version": "12",
-    "provider": "Microsoft",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Phi-3-mini-4k-instruct",
-    "version": "14",
-    "provider": "Microsoft",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Phi-3-small-128k-instruct",
-    "version": "4",
-    "provider": "Microsoft",
-    "sku": "GlobalStandard"
-  },
-  {
-    "name": "Phi-3-small-8k-instruct",
-    "version": "5",
-    "provider": "Microsoft",
     "sku": "GlobalStandard"
   },
   {
